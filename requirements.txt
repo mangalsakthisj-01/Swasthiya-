@@ -1,0 +1,29 @@
+# Streamlit entrypoint and real Leaflet/Folium-backed map
+streamlit>=1.42,<2.0
+streamlit-folium>=0.24,<1.0
+folium>=0.18,<1.0
+
+# Shared service layer and databases
+python-dotenv>=1.0,<2.0
+SQLAlchemy>=2.0,<3.0
+alembic>=1.14,<2.0
+psycopg[binary]>=3.2,<4.0
+shapely>=2.0,<3.0
+
+# Optional FastAPI service and scheduled worker
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+PyJWT[crypto]>=2.9,<3.0
+python-multipart>=0.0.20,<1.0
+APScheduler>=3.10,<4.0
+
+# Maps, exports, evidence, and optional private object storage
+requests>=2.32,<3.0
+Pillow>=11.0,<13.0
+reportlab>=4.2,<6.0
+pandas>=2.2,<3.0
+boto3>=1.35,<2.0
+
+# Testing
+pytest>=8.3,<9.0
+httpx>=0.27,<1.0
